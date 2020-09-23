@@ -1,0 +1,135 @@
+
+    <form action="clientes/suporte_cadastrar.php" method="POST" 
+        onsubmit="return validarNome(), validarEmail(),validarSenha(), validarCpf(), validarDn(), pesquisaCep(), validarNumero(), validarComplemento(), validarCidade(),validarEstado();">
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Nome completo</label>
+        <div class="col-10">
+            <input id="nome" class="form-control" type="text" placeholder="Ex.:João da Silva" name="nome_completo" onchange="validarNome()">
+            <span class="invalido" id="nome_invalido">Nome Inválido!</span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">E-mail</label>
+        <div class="col-10">
+            <input id="email" class="form-control" type="email" placeholder="Ex.:Exemple@mail.com" onchange="validarEmail();" name="email">
+            <span class="invalido" id="email_invalido">E-mail Inválido!</span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Senha</label>
+        <div class="col-10">
+            <input class="form-control" type="password" value="hunter2" id="senha" onchange="validarSenha()">
+            <span class="invalido" id="senha_invalido">E-mail Inválido!</span>
+        </div>
+    </div> 
+    
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Confirma senha</label>
+        <div class="col-10">
+            <input class="form-control" type="password" value="hunter2" id="confirmar_senha" onchange="validarSenha()">
+            <span class="invalido" id="Csenhainvalida_invalido">E-mail Inválido!</span>
+        </div>
+    </div> 
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">CPF</label>
+        <div class="col-10">
+            <input class="form-control" type="text" value="Ex: 000.000.000-00" name="cpf">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Data Nascimento</label>
+        <div class="col-10">
+            <input class="form-control" type="date" value="" name="data_nascimento">
+        </div>
+    </div>
+
+    <h3 class="sub-titulo-cadastro-usuario-edereco">Endereço:</h3>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">CEP</label>
+        <div class="col-10">
+            <input id="cep" class="form-control" type="text" value="Ex: 00000-000" name="endereco_cep" onchange="pesquisaCEP(cep.value)">
+            <span class="invalido" id="cep_invalido">CEP Inválido!</span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Logradouro</label>
+        <div class="col-10">
+            <input class="form-control" type="text" value="Ex: Cruz de Souza" name="endereco_logradouro">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Número</label>
+        <div class="col-10">
+            <input class="form-control" type="text" value="Ex: 381" name="endereco_numero">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Complemento</label>
+        <div class="col-10">
+            <input class="form-control" type="text" value="Ex: Casa,Apartamento N°5" name="endereco_complemento">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Cidade</label>
+        <div class="col-10">
+            <input class="form-control" type="text" value="Ex: Lages" name="endereco_cidade">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label inputState">Estado</label>
+        <div class="col-10">
+            <select id="inputState" class="form-control" type="text" name="endereco_estado">
+                <option selected>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="final-cadastro">
+        <div class="container conainer-final-cadastro form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Me manter atualizado</label>
+        </div>
+    </div>
+        
+<div class="modal-footer">
+<button type="button submit" name="cadastrar" value="Confirmar" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<button type="submit" class="btn btn-primary">Save changes</button>                                        </div>
+        
+</form>
