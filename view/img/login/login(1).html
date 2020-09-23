@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Apotek</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    
+</head>
+<body>
+    <section class="inicio">
+            <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link" href="../html/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link" href="../html/saudeBemEstar.html">Saúde e Bem-Estar</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link " href="../html/belezaProtecao.html">Beleza e Proteção</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link " href="../html/cosmeticos.html">Cosméticos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link " href="../html/higiene.html">Higiene</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link " href="../html/faleConosco.html">Fale Conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link" href="../html/sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link" href="../html/cadastrarCliente.html">Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link" href="../html/login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll-link" href="../html/carrinhoCompras.html">Carrinho de Compras</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>  
+    </section>
+
+    <section class="form-cadastro-usuario">
+        <div class="container container-form-cadastro-usuario">
+            <h1 class="titulo-cadastro-usuario">Login</h1>
+            <form action="../clientes/suporte_cadastrar.php" method="POST">
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label">E-mail</label>
+                <div class="col-10">
+                    <input class="form-control" type="email" value="Ex: JoaoSilva@gmail.com" name="email">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Senha</label>
+                <div class="col-10">
+                    <input class="form-control" type="password" value="hunter2" id="senha">
+                </div>
+            </div> 
+
+            <div class="final-cadastro">
+
+                <button type="submit" name="cadastrar" value="Confirmar" class="btn btn-primary">Confirmar</button>
+                <button type="reset" name="resetar" value="Limpar" class="btn btn-primary">Resetar</button>
+                
+                <div>
+                    <a href="">Ou se Cadastrar</a>
+                </div>
+                
+            </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div>
+            <div class="container sobre-container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4 class="titulo-sobre">Sobre a Apotek</h4>
+                        <p class="texto-sobre">
+                            Projeto Integrador criado no segundo semestre de 2018 pelos alunos, Ana Athayde e Jaqueline dos santos, do 4° Módulo do IFSC-Instituto Federal de Santa Catarina, Câmpus Lages com o propósito de facilitar a compra de medicamentos, a ideia foi criada após perceberem a dificuldade de um trabalhador ou idoso de ir até uma farmácia para comprar ou fazer o pedido de um produto. 
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="titulo-sobre">Links</h4>
+                        <ul>
+                            <li> <a href="https://www.facebook.com/">Facebook</a> </li>
+                            <li> <a href="https://www.instagram.com/">Instagram</a> </li>
+                            <li> <a href="http://www.ifsc.edu.br/">IFSC-Instituto Federal de Santa Catarina</a> </li>
+                            <li> <a href="https://www.lages.ifsc.edu.br/">IFSC-Instituto Federal de Santa Catarina Câmpus Lages</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row rodape-container">
+                    <div class="container rodape">
+                        Copyright © 2018 Apotek - Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</body>
+</html>
