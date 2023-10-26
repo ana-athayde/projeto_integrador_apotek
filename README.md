@@ -14,9 +14,9 @@ O repositório está organizado nas seguintes pastas:
   - `html`: Contém os arquivos HTML que compõem as páginas do site.
     - `clientes`: Páginas relacionadas aos clientes.
     - `login`: Páginas de login e suporte ao login.
-- `img`: Possíveis recursos de imagens utilizados no projeto.
-- `js`: Possíveis scripts JavaScript utilizados no projeto.
-- `css`: Possíveis estilos CSS utilizados no projeto.
+- `img`: Recursos de imagens utilizados no projeto.
+- `js`: Scripts JavaScript utilizados no projeto.
+- `css`: Estilos CSS utilizados no projeto.
 
 ## Estrutura das Classes
 
